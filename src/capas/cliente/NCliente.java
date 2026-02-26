@@ -15,9 +15,11 @@ public class NCliente {
 
     private DCliente DatoCliente;
 
-    public NCliente() {
-        this.DatoCliente = new DCliente();
+    public NCliente(DCliente DatoCliente) {
+        this.DatoCliente = DatoCliente;
     }
+
+  
 
     public void cargarDatos(Map<String, Object> data) {
         DatoCliente.cargarDatos(data);
