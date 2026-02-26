@@ -5,7 +5,10 @@
  */
 package capas.cliente;
 
-
+import java.util.HashMap;
+import java.util.Map;
+import javax.swing.DefaultListModel;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -13,12 +16,19 @@ package capas.cliente;
  */
 public class PClienteForm extends javax.swing.JFrame {
 
+    private NCliente negocioCliente;
+    private DefaultListModel<String> modeloClientes;
+
     /**
      * Creates new form PClienteForm 
-     * PClienteForm - forulario
+     * PClienteForm - formulario
      */
     public PClienteForm() {
         initComponents();
+        negocioCliente = new NCliente();
+        modeloClientes = new DefaultListModel<>();
+        jList1.setModel(modeloClientes);
+        cargarListaClientes();
     }
 
     /**
@@ -127,9 +137,40 @@ public class PClienteForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        String ci = jTextField1.getText().trim();
+        String nombre = jTextField2.getText().trim();
 
+        if (ci.isEmpty() || nombre.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "CI y Nombre completo son obligatorios", "Validación", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+
+        Map<String, Object> data = new HashMap<>();
+        data.put("id", "");
+        data.put("ci", ci);
+        data.put("nombrecompleto", nombre);
+
+        negocioCliente.cargarDatos(data);
+        negocioCliente.guardar();
+
+        cargarListaClientes();
+
+        jTextField1.setText("");
+        jTextField2.setText("");
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void cargarListaClientes() {
+        modeloClientes.clear();
+        Map<String, Object[]> clientes = negocioCliente.listar();
+        for (Object[] fila : clientes.values()) {
+            if (fila.length >= 3) {
+                String id = fila[0].toString();
+                String ci = fila[1].toString();
+                String nombre = fila[2].toString();
+                modeloClientes.addElement(id + " - " + ci + " - " + nombre);
+            }
+        }
+    }
 
     /**
      * @param args the command line arguments
