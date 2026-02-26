@@ -15,7 +15,17 @@ import java.time.LocalDate;
  */
 public class DMantenimiento {
 
-  
+   private int nroMantenimiento;
+    private LocalDate fecha;
+    private String placa;
+    private String marca;
+    private String modelo;
+    private String accesorios; // Ej: "Radio, ETC"
+    private String descripcion;
+    private String personaRecepcion;
+    private DVehiculo vehiculo;
+
+    private Database database;
 
     public DMantenimiento(int nroMantenimiento, LocalDate fecha, String placa, String marca, String modelo, String accesorios, String descripcion, String personaRecepcion, DVehiculo vehiculo, Database database) {
         this.nroMantenimiento = nroMantenimiento;
@@ -109,16 +119,6 @@ public class DMantenimiento {
     public void setDatabase(Database database) {
         this.database = database;
     }
-    private int nroMantenimiento;
-    private LocalDate fecha;
-    private String placa;
-    private String marca;
-    private String modelo;
-    private String accesorios; // Ej: "Radio, ETC"
-    private String descripcion;
-    private String personaRecepcion;
-    private DVehiculo vehiculo;
-
-    private Database database;
+   
 
 }
