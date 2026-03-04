@@ -2,26 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/valde/Documents/NetBeansProjects/VehiculoCar/src/mvc/cuota/MCuota.java</file>
-            <file>file:/C:/Users/valde/Documents/NetBeansProjects/VehiculoCar/src/capas/cliente/PCliente.java</file>
-            <file>file:/C:/Users/valde/Documents/NetBeansProjects/VehiculoCar/src/mvc/cliente/MCliente.java</file>
-            <file>file:/C:/Users/valde/Documents/NetBeansProjects/VehiculoCar/src/mvc/cuota/CCuota.java</file>
-            <file>file:/C:/Users/valde/Documents/NetBeansProjects/VehiculoCar/src/capas/cliente/NCliente.java</file>
-            <file>file:/C:/Users/valde/Documents/NetBeansProjects/VehiculoCar/src/capas/cliente/DCliente.java</file>
-            <file>file:/C:/Users/valde/Documents/NetBeansProjects/VehiculoCar/src/mvc/cliente/VCliente.java</file>
-            <file>file:/C:/Users/valde/Documents/NetBeansProjects/VehiculoCar/src/capas/cuota/DCuota.java</file>
-            <file>file:/C:/Users/valde/Documents/NetBeansProjects/VehiculoCar/src/capas/mantenimiento/NMantenimiento.java</file>
-            <file>file:/C:/Users/valde/Documents/NetBeansProjects/VehiculoCar/src/mvc/mantenimiento/NMantenimiento.java</file>
-            <file>file:/C:/Users/valde/Documents/NetBeansProjects/VehiculoCar/src/mvc/cliente/CCliente.java</file>
-            <file>file:/C:/Users/valde/Documents/NetBeansProjects/VehiculoCar/src/capas/cuota/NCuota.java</file>
-            <file>file:/C:/Users/valde/Documents/NetBeansProjects/VehiculoCar/src/mvc/mantenimiento/DMantenimiento.java</file>
-            <file>file:/C:/Users/valde/Documents/NetBeansProjects/VehiculoCar/src/mvc/contrato/MContrato.java</file>
-            <file>file:/C:/Users/valde/Documents/NetBeansProjects/VehiculoCar/src/mvc/contrato/CContrato.java</file>
-            <file>file:/C:/Users/valde/Documents/NetBeansProjects/VehiculoCar/src/capas/contrato/NContrato.java</file>
-            <file>file:/C:/Users/valde/Documents/NetBeansProjects/VehiculoCar/src/capas/vehiculo/NVehiculo.java</file>
-            <file>file:/C:/Users/valde/Documents/NetBeansProjects/VehiculoCar/src/mvc/vehiculo/MVehiculo.java</file>
-            <file>file:/C:/Users/valde/Documents/NetBeansProjects/VehiculoCar/src/mvc/vehiculo/NVehiculo.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

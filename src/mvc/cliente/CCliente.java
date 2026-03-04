@@ -12,13 +12,12 @@ import java.util.Map;
  * @author valde
  */
 public class CCliente {
-     private MCliente DatoCliente;
+
+    private MCliente DatoCliente;
 
     public CCliente(MCliente DatoCliente) {
         this.DatoCliente = DatoCliente;
     }
-
-  
 
     public void cargarDatos(Map<String, Object> data) {
         DatoCliente.cargarDatos(data);
